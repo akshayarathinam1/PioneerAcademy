@@ -4,39 +4,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // ── NAVBAR SCROLL ──
-  const navbar = document.querySelector('.navbar');
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 60);
-    });
-  }
+  // ── NAVBAR LOGIC MOVED TO COMPONENTS.JS ──
 
-  // ── HAMBURGER MENU ──
-  const hamburger = document.querySelector('.hamburger');
-  const navLinks  = document.querySelector('.nav-links');
-  if (hamburger && navLinks) {
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('open');
-      navLinks.classList.toggle('open');
-    });
-    // close on link click (mobile)
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navLinks.classList.remove('open');
-      });
-    });
-  }
-
-  // ── ACTIVE NAV LINK ──
-  const currentPage = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    const href = a.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      a.classList.add('active');
-    }
-  });
 
   // ── SCROLL REVEAL ──
   const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
@@ -140,7 +109,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial state
     goTo(0);
-    startAuto();
+
+    // Disable auto-play on classes pages per user request
+    const isClassesPage = window.location.pathname.includes('/classes/') || window.location.pathname.endsWith('classes.html');
+    if (!isClassesPage) {
+      startAuto();
+    }
   });
   
   // ── GALLERY FILTER LOGIC ──
