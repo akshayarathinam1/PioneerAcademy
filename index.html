@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pioneer Academy of Arts — Discover Your Creative Potential</title>
+  <meta name="description" content="Pioneer Academy of Arts offers professional training in Painting, Dance, Music, Photography, Sculpture, and Theater. Enroll today and unleash your creativity." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo/logo.png" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Page-specific hero height override */
+    .hero { min-height: calc(100vh - var(--topbar-h) - var(--nav-h)); }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       TOP INFO BAR
+  ═══════════════════════════════════════ -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <span class="topbar-item">
+          <i class="fa fa-envelope"></i> info@pioneeracademy.in
+        </span>
+        <span class="topbar-item">
+          <i class="fa fa-clock"></i> Mon – Sat &nbsp;09:00 AM – 07:00 PM
+        </span>
+        <span class="topbar-item">
+          <i class="fa fa-location-dot"></i> 45 Arts Lane, Banjara Hills, Hyderabad
+        </span>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo/logo.png" alt="Pioneer Academy Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">Pioneer</span>
+          <span class="nav-logo-sub">Academy of Arts</span>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="nav-item-dropdown">
+          <a href="classes.html">Classes <i class="fa fa-chevron-down nav-chevron" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="classes/piano-keyboard.html">Piano & Keyboard</a></li>
+            <li><a href="classes/guitar.html">Guitar</a></li>
+            <li><a href="classes/drums.html">Drums & Pad</a></li>
+            <li><a href="classes/western-dance.html">Western Dance</a></li>
+            <li><a href="classes/classical-dance.html">Classical Dance</a></li>
+            <li><a href="classes/art-drawing.html">Art & Drawing</a></li>
+            <li><a href="classes/carnatic-vocal.html">Carnatic Vocal</a></li>
+            <li><a href="classes/violin.html">Violin</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <!-- Right side -->
+      <div class="nav-right">
+        <button class="nav-search-btn" aria-label="Search"><i class="fa fa-search"></i></button>
+        <a href="contact.html" class="btn btn-primary nav-cta">
+          Book Admission
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <!-- Prev / Next Arrows -->
+    <button class="hero-arrow hero-arrow-prev" aria-label="Previous">
+      <i class="fa fa-chevron-left"></i>
+    </button>
+    <button class="hero-arrow hero-arrow-next" aria-label="Next">
+      <i class="fa fa-chevron-right"></i>
+    </button>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">Discover Your Creative Potential — Pioneer Academy</div>
+        <h1 class="hero-title">
+          Art is Life. <span class="highlight">That's why our</span><br>
+          souls have stories.
+        </h1>
+        <p class="hero-desc">
+          We nurture artists, dreamers, and creators. Join our internationally inspired classes in Painting, Dance, Music, Photography, Sculpture, and Theater.
+        </p>
+        <div class="hero-btns">
+          <a href="classes.html" class="btn btn-primary">
+            <i class="fa fa-palette"></i> Explore Classes
+          </a>
+          <a href="gallery.html" class="btn btn-outline">
+            <i class="fa fa-images"></i> Our Gallery
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">10,000+</div>
+            <div class="hero-stat-label">Students Enrolled</div>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-num">29+</div>
+            <div class="hero-stat-label">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ═══════════════════════════════════════
+       ABOUT / INTRO SECTION
+  ═══════════════════════════════════════ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid reveal">
+        <!-- Images collage -->
+        <div class="about-images">
+          <div class="about-img about-img-1">
+            <img src="https://images.unsplash.com/photo-1514119412350-e174d90d280e?w=800&q=80" alt="About Pioneer Academy" loading="lazy" />
+          </div>
+          <div class="about-img about-img-2">
+            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80" alt="Students learning" loading="lazy" />
+          </div>
+          <div class="about-img about-img-3">
+            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80" alt="Art session" loading="lazy" />
+          </div>
+          <div class="about-badge">
+            <div class="about-badge-num">29+</div>
+            <div class="about-badge-label">Years of Excellence</div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-content">
+          <span class="section-tag">ESTD. 1995 — A LEGACY OF ART</span>
+          <h2 class="section-title">
+            Crafting Excellence,<br>
+            <span>Inspiring 10,000+ Students.</span>
+          </h2>
+          <p class="section-subtitle">
+            Born in 1995, Pioneer Academy of Arts has transitioned from a visionary music school to a global standard in performing arts education.
+          </p>
+          <div class="about-points">
+            <div class="about-point">
+              <div class="about-point-num">01</div>
+              <div>
+                <h4>Global Certifications</h4>
+                <p>Recognized by Trinity College London, Rockschool, and ABRSM for world-class standards.</p>
+              </div>
+            </div>
+            <div class="about-point">
+              <div class="about-point-num">02</div>
+              <div>
+                <h4>International Reputation</h4>
+                <p>Nurturing 10,000+ students with structured training and creative confidence.</p>
+              </div>
+            </div>
+            <div class="about-point">
+              <div class="about-point-num">03</div>
+              <div>
+                <h4>Shaping Future Musicians</h4>
+                <p>Elite instructors dedicated to guiding the next generation of global performers.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-footer">
+            <a href="about.html" class="btn btn-primary">About Us</a>
+            <div class="about-divider"></div>
+            <div class="about-signature">
+              <div class="about-signature-role">Pioneer Academy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       POPULAR CLASSES SECTION
+  ═══════════════════════════════════════ -->
+  <section class="programs-section" id="classes">
+    <div class="container reveal">
+      <div class="section-head">
+        <span class="section-tag">The classes we provide for our students</span>
+        <h2 class="section-title">Most Popular <span>Classes</span> &amp; Courses</h2>
+        <p class="section-subtitle">Discover our signature arts classes curated by expert instructors to help you master your craft.</p>
+      </div>
+
+      <!-- Categories Grid -->
+      <div class="category-grid">
+        <!-- Category: Piano -->
+        <a href="classes/piano-keyboard.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?w=800&q=80" alt="Piano" loading="lazy">
+          </div>
+          <div class="category-info">
+            <span class="category-tag">Instrumental</span>
+            <h3 class="category-name">Piano & Keyboard</h3>
+            <p class="category-desc">Master the keys with our structured piano and keyboard courses.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category: Guitar -->
+        <a href="classes/guitar.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800&q=80" alt="Guitar" loading="lazy">
+          </div>
+          <div class="category-info">
+            <span class="category-tag">Instrumental</span>
+            <h3 class="category-name">Guitar</h3>
+            <p class="category-desc">Learn acoustic or electric guitar from foundational chords to advanced techniques.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category: Drums -->
+        <a href="classes/drums.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=800&q=80" alt="Drums & Pad" loading="lazy">
+          </div>
+          <div class="category-info">
+            <span class="category-tag">Percussion</span>
+            <h3 class="category-name">Drums & Pad</h3>
+            <p class="category-desc">Build your sense of rhythm with interactive drum and pad sessions.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category: Western Dance -->
+        <a href="classes/western-dance.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1547153760-18fc86324498?w=800&q=80" alt="Western Dance" loading="lazy">
+          </div>
+          <div class="category-info">
+            <span class="category-tag">Movement</span>
+            <h3 class="category-name">Western Dance</h3>
+            <p class="category-desc">Explore dynamic western style choreographies and contemporary movement.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category: Classical Dance -->
+        <a href="classes/classical-dance.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&q=80" alt="Classical Dance" loading="lazy" style="object-position: top center;">
+          </div>
+          <div class="category-info">
+            <span class="category-tag">Performing Arts</span>
+            <h3 class="category-name">Classical Dance</h3>
+            <p class="category-desc">Express through rhythm and grace in our classical dance academy.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category: Art -->
+        <a href="classes/art-drawing.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&q=80" alt="Art & Drawing" loading="lazy">
+          </div>
+          <div class="category-info">
+            <span class="category-tag">Visual Arts</span>
+            <h3 class="category-name">Art & Drawing</h3>
+            <p class="category-desc">Unleash your creativity with structured sketching and canvas painting.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category: Carnatic Vocal -->
+        <a href="classes/carnatic-vocal.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=800&q=80" alt="Carnatic Vocal" loading="lazy">
+          </div>
+          <div class="category-info">
+            <span class="category-tag">Vocal Arts</span>
+            <h3 class="category-name">Carnatic Vocal</h3>
+            <p class="category-desc">Train your voice in the profound and rhythmic tradition of Carnatic music.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+
+        <!-- Category: Violin -->
+        <a href="classes/violin.html" class="category-card">
+          <div class="category-img">
+            <img src="https://images.unsplash.com/photo-1612225232901-99ad0a4d7bb5?w=800&q=80" alt="Violin Classes" loading="lazy">
+              </div>
+          <div class="category-info">
+            <span class="category-tag">Instrumental</span>
+            <h3 class="category-name">Violin Classes</h3>
+            <p class="category-desc">Learn bowing techniques and melodies on the classical string violin.</p>
+            <div class="category-arrow">
+              <i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════════ -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">What Our Students Say</span>
+        <h2 class="section-title light">Stories of <span>transformation</span> &amp; growth</h2>
+      </div>
+      <div class="testimonials-track">
+        <div class="testimonials-carousel">
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Pioneer Academy transformed my hobby into a profession. The painting instructors are deeply knowledgeable and incredibly patient. I won my first state-level art award within 8 months of joining.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">A</div>
+              <div>
+                <div class="testimonial-name">Ananya Sharma</div>
+                <div class="testimonial-program">Painting &amp; Fine Arts Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">The dance classes here are phenomenal. My Bharatanatyam teacher helped me understand the deeper philosophy of the art. The studio is world-class and the community is very warm.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">R</div>
+              <div>
+                <div class="testimonial-name">Rithika Patel</div>
+                <div class="testimonial-program">Classical Dance Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">I always wanted to learn guitar and vocals. Pioneer Academy had both under one roof, and the music instructors are absolutely brilliant. My confidence on stage has grown enormously.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">K</div>
+              <div>
+                <div class="testimonial-name">Karthik Raj</div>
+                <div class="testimonial-program">Music Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">The photography program here is outstanding. I learned everything from basic DSLR settings to advanced Lightroom editing. I now work as a freelance photographer full-time!</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">M</div>
+              <div>
+                <div class="testimonial-name">Megha Iyer</div>
+                <div class="testimonial-program">Photography Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">Theater at Pioneer Academy gave me confidence I didn't know I had. The workshops, performances, and mentor guidance shaped me into a performer. I'm now pursuing acting professionally.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">S</div>
+              <div>
+                <div class="testimonial-name">Sahil Verma</div>
+                <div class="testimonial-program">Theater Arts Student</div>
+                <div class="testimonial-stars">★★★★★</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonials-dots">
+        <div class="t-dot active"></div>
+        <div class="t-dot"></div>
+        <div class="t-dot"></div>
+        <div class="t-dot"></div>
+        <div class="t-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       CTA BANNER
+  ═══════════════════════════════════════ -->
+  <section class="cta-section" id="cta">
+    <div class="container reveal">
+      <p class="cta-label">Start Your Creative Journey</p>
+      <h2 class="cta-title">Ready to <span>Unleash</span> Your Inner Artist?</h2>
+      <p class="cta-desc">Join 1200+ students at Pioneer Academy of Arts. New batches starting every month — limited seats available.</p>
+      <div class="cta-btns">
+        <a href="classes.html" class="btn btn-primary"><i class="fa fa-palette"></i> Explore Classes</a>
+        <a href="contact.html" class="btn btn-outline"><i class="fa fa-phone"></i> Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="footer-logo-img-wrapper">
+              <img src="images/logo/logo.png" alt="Pioneer Academy Logo" />
+            </div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-title" style="color:var(--white)">Pioneer</span>
+              <span class="nav-logo-sub">Academy of Arts</span>
+            </div>
+          </a>
+          <p>Nurturing creativity and excellence since 1995. A premier destination for arts education across all disciplines.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Classes -->
+        <div class="footer-col">
+          <h5>Our Classes</h5>
+          <ul>
+            <li><a href="classes/piano-keyboard.html">Piano & Keyboard</a></li>
+            <li><a href="classes/guitar.html">Guitar</a></li>
+            <li><a href="classes/drums.html">Drums & Pad</a></li>
+            <li><a href="classes/western-dance.html">Western Dance</a></li>
+            <li><a href="classes/classical-dance.html">Classical Dance</a></li>
+            <li><a href="classes/art-drawing.html">Art & Drawing</a></li>
+            <li><a href="classes/carnatic-vocal.html">Carnatic Vocal</a></li>
+            <li><a href="classes/violin.html">Violin</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h5>Get In Touch</h5>
+          <div class="footer-contact-item" style="display:flex; gap:12px; margin-bottom:15px;">
+            <i class="fa fa-location-dot" style="color:var(--gold); margin-top:4px;"></i>
+            <span>45 Arts Lane, Banjara Hills, Hyderabad – 500034</span>
+          </div>
+          <div class="footer-contact-item" style="display:flex; gap:12px; margin-bottom:15px;">
+            <i class="fa fa-phone" style="color:var(--gold);"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item" style="display:flex; gap:12px; margin-bottom:15px;">
+            <i class="fa fa-envelope" style="color:var(--gold);"></i>
+            <span>info@pioneeracademy.in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+        <span>&copy; 2026 Pioneer Academy of Arts. All Rights Reserved.</span>
+        <span>Designed by <a href="#">Akshaya R</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat with us</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

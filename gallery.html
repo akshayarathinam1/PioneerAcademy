@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Pioneer Academy of Arts</title>
+  <meta name="description" content="Explore the vibrant life at Pioneer Academy of Arts. From student performances to classroom sessions, our gallery showcases the creative journey." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo/logo.png" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       TOP INFO BAR
+  ═══════════════════════════════════════ -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-left">
+        <span class="topbar-item">
+          <i class="fa fa-envelope"></i> info@pioneeracademy.in
+        </span>
+        <span class="topbar-item">
+          <i class="fa fa-clock"></i> Mon – Sat &nbsp;09:00 AM – 07:00 PM
+        </span>
+        <span class="topbar-item">
+          <i class="fa fa-location-dot"></i> 45 Arts Lane, Banjara Hills, Hyderabad
+        </span>
+      </div>
+      <div class="topbar-right">
+        <div class="topbar-social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo/logo.png" alt="Pioneer Academy Logo" class="nav-logo-img" />
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">Pioneer</span>
+          <span class="nav-logo-sub">Academy of Arts</span>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="nav-item-dropdown">
+          <a href="classes.html">Classes <i class="fa fa-chevron-down nav-chevron" style="font-size: 0.75rem; margin-left: 4px;"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="classes/piano-keyboard.html">Piano & Keyboard</a></li>
+            <li><a href="classes/guitar.html">Guitar</a></li>
+            <li><a href="classes/drums.html">Drums & Pad</a></li>
+            <li><a href="classes/western-dance.html">Western Dance</a></li>
+            <li><a href="classes/classical-dance.html">Classical Dance</a></li>
+            <li><a href="classes/art-drawing.html">Art & Drawing</a></li>
+            <li><a href="classes/carnatic-vocal.html">Carnatic Vocal</a></li>
+            <li><a href="classes/violin.html">Violin</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <!-- Right side -->
+      <div class="nav-right">
+        <button class="nav-search-btn" aria-label="Search"><i class="fa fa-search"></i></button>
+        <a href="contact.html" class="btn btn-primary nav-cta">
+          Book Admission
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════════════ -->
+  <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600&q=80');">
+    <div class="container">
+      <span class="section-tag reveal">VISUAL JOURNEY</span>
+      <h1 class="hero-title reveal">Our <span>Gallery</span></h1>
+      <p class="reveal delay-1">Explore the vibrant atmospheric energy and masterful creations at Pioneer Academy</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       OVERLAP GALLERY GRID
+  ═══════════════════════════════════════ -->
+  <section class="overlap-section">
+    <div class="container">
+      <div class="premium-gallery-wrap reveal">
+        <!-- Filter -->
+        <!-- Filter -->
+        <div class="gallery-filter reveal">
+          <button class="filter-btn active" data-filter="all">All Moments</button>
+          <button class="filter-btn" data-filter="music">Music</button>
+          <button class="filter-btn" data-filter="dance">Dance</button>
+          <button class="filter-btn" data-filter="fine-arts">Fine Arts</button>
+          <button class="filter-btn" data-filter="performances">Performances</button>
+        </div>
+
+        <div class="gallery-grid bento-grid">
+          <!-- Item 1: Music (Large) -->
+          <div class="gallery-item reveal bento-large" data-category="music">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1200&q=80" alt="Piano Session" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Music</span>
+                <h4>Grand Piano Session</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Dance -->
+          <div class="gallery-item reveal" data-category="dance">
+            <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=800&q=80" alt="Dance Performance" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Dance</span>
+                <h4>Classical Arangetram</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Art -->
+          <div class="gallery-item reveal" data-category="fine-arts">
+            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80" alt="Art Workshop" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Fine Arts</span>
+                <h4>Oil Painting Workshop</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Studio (Wide) -->
+          <div class="gallery-item reveal bento-wide" data-category="performances">
+            <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200&q=80" alt="Recording Studio" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Performances</span>
+                <h4>Live Studio Recording</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Guitar -->
+          <div class="gallery-item reveal" data-category="music">
+            <img src="https://images.unsplash.com/photo-1550985616-10810253b84d?w=800&q=80" alt="Guitar Class" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Music</span>
+                <h4>Acoustic Guitar Mastery</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Western Dance (Tall) -->
+          <div class="gallery-item reveal bento-tall" data-category="dance">
+            <img src="https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=800&q=80" alt="Western Dance" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Dance</span>
+                <h4>Contemporary Flow</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7: Kid's Art -->
+          <div class="gallery-item reveal" data-category="fine-arts">
+            <img src="https://images.unsplash.com/photo-1502691876148-a84978e59af8?w=800&q=80" alt="Children's Art" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Fine Arts</span>
+                <h4>Junior Artists Corner</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8: Performance -->
+          <div class="gallery-item reveal" data-category="performances">
+            <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&q=80" alt="Music Concert" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Performances</span>
+                <h4>Annual Talent Showcase</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9: Violin
+          <div class="gallery-item reveal" data-category="music">
+            <img src="" alt="Violin Practice" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Music</span>
+                <h4>Violin Recital Prep</h4>
+                <p>Diligence and precision in practice as students prepare for their upcoming Grade 8 examinations.</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Item 11: Art (Sculpture) -->
+          <div class="gallery-item reveal" data-category="fine-arts">
+            <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?w=800&q=80" alt="Sculpture Class" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Fine Arts</span>
+                <h4>Pottery & Sculpture</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 10: Drums (Wide) -->
+          <div class="gallery-item reveal bento-wide" data-category="music">
+            <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=1200&q=80" alt="Drums & Pad" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Music</span>
+                <h4>Rhythmic Fusion Room</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 12: Vocal Performance -->
+          <!-- <div class="gallery-item reveal" data-category="performances">
+            <img src="https://images.unsplash.com/photo-1547153760-18fc8603451e?w=800&q=80" alt="Vocal Performance" />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                <span>Performances</span>
+                <h4>Vocal Resonance Night</h4>
+                <p>Expressive vocal performances by our choir and soloists, celebrating the power of the human voice.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="footer-logo-img-wrapper">
+              <img src="images/logo/logo.png" alt="Pioneer Academy Logo" />
+            </div>
+            <div class="nav-logo-text">
+              <span class="nav-logo-title" style="color:var(--white)">Pioneer</span>
+              <span class="nav-logo-sub">Academy of Arts</span>
+            </div>
+          </a>
+          <p>Nurturing creativity and excellence since 1995. A premier destination for arts education across all disciplines.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Classes -->
+        <div class="footer-col">
+          <h5>Our Classes</h5>
+          <ul>
+            <li><a href="classes/piano-keyboard.html">Piano & Keyboard</a></li>
+            <li><a href="classes/guitar.html">Guitar</a></li>
+            <li><a href="classes/drums.html">Drums & Pad</a></li>
+            <li><a href="classes/western-dance.html">Western Dance</a></li>
+            <li><a href="classes/classical-dance.html">Classical Dance</a></li>
+            <li><a href="classes/art-drawing.html">Art & Drawing</a></li>
+            <li><a href="classes/carnatic-vocal.html">Carnatic Vocal</a></li>
+            <li><a href="classes/violin.html">Violin</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <h5>Get In Touch</h5>
+          <div class="footer-contact-item" style="display:flex; gap:12px; margin-bottom:15px;">
+            <i class="fa fa-location-dot" style="color:var(--gold); margin-top:4px;"></i>
+            <span>45 Arts Lane, Banjara Hills, Hyderabad – 500034</span>
+          </div>
+          <div class="footer-contact-item" style="display:flex; gap:12px; margin-bottom:15px;">
+            <i class="fa fa-phone" style="color:var(--gold);"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item" style="display:flex; gap:12px; margin-bottom:15px;">
+            <i class="fa fa-envelope" style="color:var(--gold);"></i>
+            <span>info@pioneeracademy.in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;">
+        <span>&copy; 2026 Pioneer Academy of Arts. All Rights Reserved.</span>
+        <span>Designed by <a href="#">Akshaya R</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat with us</span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
